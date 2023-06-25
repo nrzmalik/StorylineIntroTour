@@ -1,3 +1,8 @@
+function updateCSS()
+{
+	var helperLayer = document.querySelector('.introjs-helperLayer');
+	helperLayer.style.boxShadow = 'rgba(115, 115, 115, 0.8) 0px 0px 1px 2px, rgba(115, 115, 115, 0.5) 0px 0px 0px 5000px';
+}
 function nrzIntroTour(language) {
   var translations = {
     intro: {
@@ -61,7 +66,7 @@ function nrzIntroTour(language) {
       portuguese: 'Se você deseja voltar para o slide anterior, use o botão "Anterior". Ele irá levá-lo de volta ao tópico ou módulo anterior.'
     }
   }
-
+updateCSS();
   introJs().setOptions({
     steps: [
       {
@@ -162,7 +167,7 @@ function nrzIntroTourWithoutSeekbar(language) {
       portuguese: 'Se você deseja voltar para o slide anterior, use o botão "Anterior". Ele irá levá-lo de volta ao tópico ou módulo anterior.'
     }
   }
-
+updateCSS();
   introJs().setOptions({
     steps: [
       {
